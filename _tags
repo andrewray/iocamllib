@@ -1,0 +1,10 @@
+# everything depends on iocaml
+<*.ml{,i}> : package(iocaml)
+
+# specific dependancies
+<table.ml{,i}> : syntax(camlp4o), package(tyxml), package(tyxml.syntax)
+<tyxml.ml{,i}> : package(tyxml)
+<icow.ml{,i}> : package(cow)
+<garbage.ml{,i}> : syntax(camlp4o), package(cow), package(cow.syntax)
+
+true: bin_annot

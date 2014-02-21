@@ -1,0 +1,5 @@
+version = "0.1.0"
+description = "IOCaml support library"
+requires = "iocaml,tyxml,cow"
+archive(byte) = "iocamllib.cma"
+
